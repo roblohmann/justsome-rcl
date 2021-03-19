@@ -1,0 +1,29 @@
+@import './../style/theme_sass';
+
+.rcl-checkbox {
+	display: flex;
+	width: 26px;
+	height: 26px;
+	background-color: white;
+	border: 1px solid $theme-border-color;
+	border-radius: $theme-border-radius;
+	font-size: 12px;
+	cursor: pointer;
+}
+
+.rcl-checkbox-disabled {
+	display: flex;
+	width: 26px;
+	height: 26px;
+	background-color: white;
+	border: 1px solid $theme-border-color;
+	border-radius: $theme-border-radius;
+}
+
+.rcl-checkbox-on {
+	@include flexCenter;
+}
+
+.rcl-checkbox-off {
+	@include flexCenter;
+}

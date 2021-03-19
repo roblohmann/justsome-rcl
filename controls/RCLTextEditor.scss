@@ -1,0 +1,63 @@
+@import './../style/theme_sass';
+
+.rcl-texteditor {
+	display: flex;
+	flex-direction: column;
+
+	&-toolbar {
+		display: flex;
+		align-items: center;
+		background-color: #fafafa;
+		height: 40px;
+		min-height: 40px;
+		padding-left: 5px;
+		border: 1px solid $theme-border-color;
+		border-top-left-radius: $theme-border-radius;
+		border-top-right-radius: $theme-border-radius;
+
+		&-button {
+			@include flexCenter;
+			border: 1px solid $theme-border-color;
+			background-color: white;
+			height: 28px;
+			width: 28px;
+			margin-right: 2px;
+			cursor: pointer;
+			border-radius: $theme-border-radius;
+			color: #333333;
+		}
+
+		&-disabled {
+			border-radius: $theme-border-radius;
+		}
+	}
+
+	&-field {
+		flex-grow: 1;
+		background-color: white;
+		padding: 7px 10px 7px 10px;
+		line-height: $theme-line-height;
+		letter-spacing: $theme-letter-spacing;
+		font-size: $theme-fontsize-default;
+		max-height: 300px;
+		overflow: auto;
+
+		&:empty:before {
+			content: attr(data-text);
+			color: $theme-placeholder-color;
+		}
+	}
+
+	&-field-border {
+		border: 1px solid $theme-border-color;
+		border-radius: $theme-border-radius;
+	}
+
+	&-field-toolbar {
+		border-left: 1px solid $theme-border-color;
+		border-right: 1px solid $theme-border-color;
+		border-bottom: 1px solid $theme-border-color;
+		border-bottom-left-radius: $theme-border-radius;
+		border-bottom-right-radius: $theme-border-radius;
+	}
+}

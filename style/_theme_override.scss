@@ -1,0 +1,58 @@
+@import './theme_sass';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: $theme-fontsize-default;
+}
+
+input {
+	font-family: 'Open Sans', sans-serif;
+	font-size: $theme-fontsize-default;
+}
+
+div:focus,
+textarea:focus,
+input:focus,
+select:focus,
+button:focus {
+	outline: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+	box-shadow: 0 0 0 30px white inset !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type='text'] {
+	-moz-appearance: textfield;
+}
+
+input::-webkit-input-placeholder {
+	font-family: 'Open Sans', sans-serif;
+	color: $theme-placeholder-color;
+}
+
+input::-moz-placeholder {
+	font-family: 'Open Sans', sans-serif;
+	color: $theme-placeholder-color;
+}
+
+input:-ms-input-placeholder {
+	font-family: 'Open Sans', sans-serif;
+	color: $theme-placeholder-color;
+}

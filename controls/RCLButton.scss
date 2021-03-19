@@ -1,0 +1,42 @@
+@import './../style/theme_sass';
+
+.rcl-button {
+	font-size: $theme-fontsize-default;
+}
+
+.rcl-button-text {
+	@include flexCenter;
+	border: 1px solid $theme-border-color;
+	border-radius: $theme-border-radius;
+	max-height: 36px;
+}
+
+.rcl-button-icon {
+	@include flexCenter;
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	border: 1px solid $theme-border-color;
+}
+
+.rcl-button-text-icon {
+	@include flexCenter;
+	border: 1px solid $theme-border-color;
+	border-radius: $theme-border-radius;
+	max-height: 36px;
+
+	span {
+		margin-right: 10px;
+	}
+}
+
+.rcl-button-icon-text {
+	@include flexCenter;
+	border: 1px solid $theme-border-color;
+	border-radius: $theme-border-radius;
+	max-height: 36px;
+
+	span {
+		margin-left: 10px;
+	}
+}

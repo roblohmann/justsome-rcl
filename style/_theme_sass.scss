@@ -1,0 +1,60 @@
+$theme-primary-color: var(--color-primary);
+$theme-primary-light-color: var(--color-primary-light);
+$theme-primary-dark-color: var(--color-primary-dark);
+$theme-primary-text-color: var(--color-primary-text);
+
+$theme-secondary-color: var(--color-secondary);
+$theme-secondary-light-color: var(--color-secondary-light);
+$theme-secondary-dark-color: var(--color-secondary-dark);
+$theme-secondary-text-color: var(--color-secondary-text);
+
+$theme-placeholder-color: var(--color-placeholder);
+$theme-border-color: var(--color-border);
+$theme-border-dark-color: var(--color-border-dark);
+
+$theme-accent-yellow: var(--color-accent-yellow);
+$theme-accent-green: var(--color-accent-green);
+$theme-accent-blue: var(--color-accent-blue);
+
+$theme-hover-color: var(--color-hover);
+$theme-hover-text-color: var(--color-hover-text);
+
+$theme-sidebar-color: var(--color-sidebar);
+$theme-panel-color: var(--color-panel);
+
+$theme-button-red: var(--color-button-red);
+$theme-button-green: var(--color-button-green);
+
+$theme-border-radius: 5px;
+$theme-fontsize-default: 14px;
+$theme-fontsize-title: 16px;
+$theme-fontsize-caption: 18px;
+$theme-letter-spacing: 1px;
+$theme-line-height: 20px;
+
+$theme-text-color: #202121;
+$theme-menu-icon-color: #555555;
+
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flexCenterLeft {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+@mixin flexCenterRight {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+@mixin flexCenterTop {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}

@@ -1,0 +1,7 @@
+@import './../style/theme_sass';
+
+.rcl-icon {
+	@include flexCenter;
+	user-select: none;
+	pointer-events: none;
+}

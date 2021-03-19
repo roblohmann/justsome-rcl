@@ -1,0 +1,64 @@
+@import './../style/theme_sass';
+
+.rcl-sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    min-width: 400px;
+    margin-right: 4px;
+
+    &-main {
+        display: flex;
+        height: 50px;
+        padding: 0 10px 0 10px;
+        border-top-left-radius: $theme-border-radius;
+        border-top-right-radius: $theme-border-radius;
+        background-color: $theme-primary-light-color;
+
+        &-button {
+            @include flexCenter;
+            width: 40px;
+            height: 50px;
+            cursor: pointer;
+        }
+
+        &-title {
+            @include flexCenter;
+            flex-grow: 1;
+            color: $theme-primary-text-color;
+            font-size: $theme-fontsize-caption;
+        }
+    }
+
+    &-modal {
+        display: flex;
+        height: 50px;
+        padding: 0 10px 0 10px;
+        border-top-left-radius: $theme-border-radius;
+        border-top-right-radius: $theme-border-radius;
+        background-color: #e74c3c;
+
+        &-button {
+            @include flexCenter;
+            width: 40px;
+            height: 50px;
+            cursor: pointer;
+        }
+
+        &-title {
+            @include flexCenter;
+            margin-left: 40px;
+            flex-grow: 1;
+            color: $theme-primary-text-color;
+            font-size: $theme-fontsize-caption;
+        }
+    }
+
+    &-body {
+        flex-grow: 1;
+        background-color: $theme-panel-color;
+        border-left: 1px solid $theme-border-color;
+        border-right: 1px solid $theme-border-color;
+        border-bottom: 1px solid $theme-border-color;
+    }
+}

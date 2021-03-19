@@ -1,0 +1,56 @@
+@import './../style/theme_sass';
+
+.rcl-searchbox {
+	display: flex;
+	border-radius: $theme-border-radius;
+	background-color: white;
+	border: 1px solid $theme-border-color;
+	height: 36px;
+	max-height: 36px;
+	flex-grow: 1;
+	padding: 1px;
+
+	&-body {
+		flex-grow: 1;
+	}
+
+	&:focus {
+		border: 1px solid $theme-primary-dark-color !important;
+	}
+}
+
+.rcl-searchbox-clear-button {
+	@include flexCenter;
+	min-width: 3opx;
+	height: 100%;
+	color: red;
+	cursor: pointer;
+
+	&:hover {
+		color: $theme-hover-color;
+	}
+}
+
+.rcl-searchbox-search-button {
+	@include flexCenter;
+	min-width: 36px;
+	height: 100%;
+	border-top-right-radius: $theme-border-radius - 1;
+	border-bottom-right-radius: $theme-border-radius - 1;
+	cursor: pointer;
+
+	&:hover {
+		color: $theme-hover-color;
+	}
+}
+
+.rcl-searchbox input[type='text'] {
+	color: $theme-text-color !important;
+	font-weight: 200;
+	font-size: $theme-fontsize-default;
+	width: 100%;
+	border: none;
+	padding-top: 6px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
