@@ -1,0 +1,26 @@
+{
+  "name": "justsome-rcl",
+  "version": "0.0.1",
+  "description": "React Component Library built using Mmaterial.io",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roblohmann/justsome-rcl.git"
+  },
+  "keywords": [
+    "justsome-rcl",
+    "rcl",
+    "react",
+    "component",
+    "library"
+  ],
+  "author": "Bo Bouwman & Rob Lohmann",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/roblohmann/justsome-rcl/issues"
+  },
+  "homepage": "https://github.com/roblohmann/justsome-rcl#readme"
+}
