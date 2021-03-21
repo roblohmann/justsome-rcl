@@ -27,6 +27,12 @@ steps:
     customCommand: 'npm install'
 
 - task: Npm@1
+  displayName: 'Set package version'
+  inputs:
+    command: 'custom'
+    customCommand: 'npm version $(Version.Major).$(Version.Minor).$(Version.Patch) --no-git-tag-version'
+
+- task: Npm@1
   displayName: 'Create Package'
   inputs:
     command: 'custom'
