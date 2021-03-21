@@ -3,6 +3,8 @@
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 
+name: $(Version.Major).$(Version.Minor).$(Version.Patch)
+
 trigger:
  batch: true
  branches:
