@@ -4,6 +4,8 @@ import './../style/_theme_override.scss';
 
 export default class RCLApp extends Component {
 	render() {
-		return <div className='main-page'>{this.props.children}</div>;
+		return (
+			<div className='main-page'>{this.props.children}</div>
+		)
 	}
 }

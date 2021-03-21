@@ -1,6 +1,6 @@
 {
   "name": "justsome-rcl",
-  "version": "0.0.1",
+  "version": "0.0.4-alpha",
   "description": "React Component Library built using Mmaterial.io",
   "main": "index.js",
   "scripts": {
